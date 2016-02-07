@@ -1,0 +1,43 @@
+{
+  "name": "mumocs",
+  "scripts": {
+  },
+  "env": {
+    "AWS_BUCKET": {
+      "required": true
+    },
+    "AWS_HOST": {
+      "required": true
+    },
+    "AWS_KEY": {
+      "required": true
+    },
+    "AWS_REGION": {
+      "required": true
+    },
+    "AWS_SECRET": {
+      "required": true
+    },
+    "BLOG_URL": {
+      "required": true
+    },
+    "MANDRILL_APIKEY": {
+      "required": true
+    },
+    "MANDRILL_USERNAME": {
+      "required": true
+    },
+    "NODE_ENV": {
+      "required": true
+    }
+  },
+  "addons": [
+    "newrelic",
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "urn:buildpack:heroku/nodejs"
+    }
+  ]
+}
